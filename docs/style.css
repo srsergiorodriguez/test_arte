@@ -1,0 +1,119 @@
+:root {
+  /* INTERFACES */
+  --interfaz: #168992;
+
+  /* BOTONES */
+  --boton: #168992;
+  --botona: #0d0110;
+  --botonb: #EE606A;
+}
+
+body {
+  padding:0;
+  margin:0;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  padding: 2em 0px 0px 0px;
+  font-size: 0.7em;
+}
+
+input {
+  font-size: 1em;
+}
+
+button {
+  font-family: 'Chewy', cursive;
+  font-size: 1.1em;
+  color:var(--botona);
+  background: var(--boton);
+  box-shadow:none;
+  border: solid 1px var(--botona);
+  border-radius: 2em;
+  margin: 0px;
+  padding: 5px;
+}
+
+.main_btn {
+  font-family: 'Chewy', cursive;
+  font-size: 1em;
+  border: solid 2px var(--botona);
+  padding: 0.6em;
+}
+
+.img_btn {
+  border-radius: 0px;
+}
+
+button:hover {
+  color: var(--botona);
+  background: var(--botonb);
+  cursor: pointer;
+}
+
+button:active {
+  background: var(--botonb);
+}
+
+.activebutton {
+  background: var(--botonb);
+}
+
+button:focus {
+  outline:none;
+}
+
+section {
+  box-sizing: border-box;
+  border: solid 1px red;
+  /* height: 100%; */
+}
+
+.interactivo {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.barra {
+  box-sizing: border-box;
+  padding: 0px 1em;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px blue;
+}
+
+.barra h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.contenido {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1.3em;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-gap: 3em;
+  border: solid 1px green;
+}
+
+.contenido h1 {
+  font-size: 1.5em;
+}
+
+.contenido p {
+  text-align: left;
+}
+
+.contenido_a {
+  max-width: 400px;
+}
+
+.interactivo_mock {
+  width: 800px;
+  height: 600px;
+  background: var(--interfaz);
+}

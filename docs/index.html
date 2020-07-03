@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup aplicación creadigital</title>
+    <base href="./">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <!-- font-family: 'Chewy', cursive; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+
+    <!-- ESTILO CSS -->
+    <link rel="stylesheet" href="reveal/reveal.css">
+    <link rel="stylesheet" href="reveal/theme/custom.css" id="theme">
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- LIBRERÍAS -->
+    <script src="libraries/p5.min.js"></script>
+    <script src="reveal/reveal.js"></script>
+
+    <!-- SKETCHES -->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- TÍTULO -->
+        <section id="titulo_section">
+          <div><img data-src="images/portada.png" id="im1"/></div>
+          <div>
+            <button class="main_btn" onclick="Reveal.next();">Galería</button>
+            <button class="main_btn" onclick="Reveal.next();">Empezar el recorrido</button>
+            <button class="main_btn" onclick="Reveal.next();">Acerca</button>
+          </div>
+          <footer><p>2020 — Todos los derechos reservados</p></footer>
+        </section>
+
+        <!-- INTERACTIVO-->
+        <section>
+          <div class="interactivo">
+            <div class="barra">
+              <div class="barra_izquierda">
+                <button onclick="Reveal.prev();">Regresar</button>
+              </div>
+              <div><h1>Nombre de la actividad</h1></div>
+              <div class="barra_derecha">
+                <button onclick="Reveal.next();">Recursos</button>
+                <button onclick="Reveal.next();">Libreta</button>
+                <button onclick="Reveal.next();">Continuar</button>
+              </div>
+            </div>
+            <div class="contenido">
+              <div class="contenido_a">
+                <div>
+                  <h1>Intrucciones</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit justo non dignissim lobortis. Donec nisl lacus, fringilla id neque eget, molestie aliquam quam.</p>
+                </div>
+                <div>
+                  <h1>Pregunta</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit justo non dignissim lobortis. Donec nisl lacus, fringilla id neque eget, molestie aliquam quam.</p>
+                  <label for="respuesta">Respuesta:</label>
+                  <input type="text" id="resupuesta" name="respuesta">
+                </div>
+              </div>
+              <div class="contenido_b">
+                <div class="interactivo_mock"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIDEO INTRODUCTORIO -->
+        <!-- <section data-autoslide="40000" data-background-video="videos/intro.mp4">
+          <div><div style="height:600px"></div><button onclick="Reveal.prev();">Regresar</button><button onclick="Reveal.next();">Continuar</button></div>
+        </section> -->
+
+        <!-- INTERACTIVO-->
+        <!-- <section>
+          <div class="outer_container">
+            <p>Pasa por las <span class="cspan">celdas</span> y mira sus posibles <span class="vspan">vecindarios</span></p> 
+            <div id="nh_explanation" class="interface"></div>
+          </div>
+          <button onclick="Reveal.prev();">Regresar</button>
+          <button onclick="Reveal.next();">Continuar</button>
+        </section> -->
+
+        <!-- CRÉDITOS -->
+        <section>
+          <h1>2020</h1>
+          <button onclick="window.location.reload();">Volver al inicio</button>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script>
+    Reveal.initialize({
+      backgroundTransition: 'fade',
+      transition: 'fade',
+      progress: false,
+      controls: false,
+      touch: false,
+      disableLayout: true
+    });
+  </script>
+</html>
