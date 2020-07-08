@@ -153,22 +153,22 @@ section {
 
 
 .interactivo_mock {
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   background: var(--interfaz);
 }
 
 .video_mock {
-  width: 1280px;
-  height: 720px;
+  width: 640px;
+  height: 480px;
   background: var(--interfaz);
   margin: auto;
 }
 
 .obra_mock {
   margin: 10px;
-  width: 270px;
-  height: 180px;
+  width: 250px;
+  height: 140px;
   background: var(--interfaz);
   cursor: pointer;
 }
@@ -181,15 +181,15 @@ section {
 
 .libreta_mock {
   margin: 5px;
-  width: 90px;
-  height: 140px;
+  width: 80px;
+  height: 130px;
   background: var(--interfaz);
   cursor: pointer;
 }
 
 .libreta_detalle_mock {
   margin: auto;
-  width: 800px;
-  height: 550px;
+  width: 700px;
+  height: 450px;
   background: var(--interfaz);
 }
