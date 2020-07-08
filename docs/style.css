@@ -70,7 +70,7 @@ button:focus {
 
 section {
   box-sizing: border-box;
-  border: solid 1px red;
+  border: solid 1px var(--botonb);
   /* height: 100%; */
 }
 
@@ -99,7 +99,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   grid-gap: 3em;
-  border: solid 1px green;
+  /* border: solid 1px green; */
   max-width: 1280px;
 }
 
@@ -123,7 +123,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border: solid 1px green;
+  /* border: solid 1px green; */
 }
 
 .detalle_obra {
@@ -133,8 +133,12 @@ section {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   grid-gap: 1em;
-  border: solid 1px green;
+  /* border: solid 1px green; */
   max-width: 1280px;
+}
+
+.detalle_obra_b p {
+  margin: 5px auto;
 }
 
 .catalogo {
@@ -174,8 +178,8 @@ section {
 }
 
 .obra_ampliada_mock {
-  width: 800px;
-  height: 600px;
+  width: 640px;
+  height: 480px;
   background: var(--interfaz);
 }
 
