@@ -25,16 +25,120 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides">
+      <div class="slides">        
+
         <!-- TÍTULO -->
-        <section id="titulo_section">
-          <div><img data-src="images/portada.png" id="im1"/></div>
-          <div>
-            <button class="main_btn" onclick="Reveal.next();">Galería</button>
-            <button class="main_btn" onclick="Reveal.next();">Empezar el recorrido</button>
-            <button class="main_btn" onclick="Reveal.next();">Acerca</button>
+        <section>
+          <section>
+            <div><img data-src="images/portada.png" id="im1"/></div>
+            <div>
+              <button class="main_btn" onclick="Reveal.down();">Galería</button>
+              <button class="main_btn" onclick="Reveal.right();">Empezar el recorrido</button>
+              <button class="main_btn" onclick="Reveal.slide(4,0,undefined);">Acerca</button>
+            </div>
+            <footer><p>Créditos y copyright</p></footer>
+          </section>
+          <section>
+            <div class="barra">
+              <div class="barra_izquierda">
+                <button onclick="Reveal.up();">Regresar</button>
+              </div>
+              <div><h1>Galería</h1></div>
+              <div class="barra_derecha">
+              </div>
+            </div>
+            <div class="galeria">
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+              <div class="obra_mock" onclick="Reveal.down();">Obra</div>
+            </div>
+          </section>
+          <section>
+            <div class="barra">
+              <div class="barra_izquierda">
+                <button onclick="Reveal.up();">Regresar</button>
+              </div>
+              <div><h1>Detalle de obra</h1></div>
+              <div class="barra_derecha">
+              </div>
+            </div>
+            <div class="detalle_obra">
+              <div class="detalle_obra_a">
+                <div class="obra_ampliada_mock">Obra ampliada</div>
+              </div>
+              <div class="detalle_obra_b">
+                <p>Libretas:</p>
+                <div class="catalogo">
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                  <div class="libreta_mock" onclick="Reveal.down();">Libreta</div>
+                </div>
+                <div class="filtro">
+                  <label for="input_filtro">Filtro:</label>
+                  <input type="text" id="input_filtro" name="input_filtro">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="barra">
+              <div class="barra_izquierda">
+                <button onclick="Reveal.prev();">Regresar</button>
+              </div>
+              <div><h1>Visor de libreta</h1></div>
+              <div class="barra_derecha">
+              </div>
+            </div>
+            <div class="libreta_detalle_mock">Libreta</div>
+          </section>
+        </section>
+
+        <!-- VIDEO INTRODUCTORIO -->
+        <section>
+          <div class="barra">
+            <div class="barra_izquierda">
+              <button onclick="Reveal.left();">Regresar</button>
+            </div>
+            <div class="barra_derecha">
+              <button onclick="Reveal.up();">Recursos</button>
+              <button onclick="Reveal.right();">Continuar</button>
+            </div>
           </div>
-          <footer><p>2020 — Todos los derechos reservados</p></footer>
+          <div class="video_mock">Video Introductorio</div>
+        </section>
+
+        <!-- VIDEO INTRODUCTORIO -->
+        <section>
+          <div class="barra">
+            <div class="barra_izquierda">
+              <button onclick="Reveal.left();">Regresar</button>
+            </div>
+            <div class="barra_derecha">
+              <button onclick="Reveal.up();">Recursos</button>
+              <button onclick="Reveal.right();">Continuar</button>
+            </div>
+          </div>
+          <div class="video_mock">Video Explicación Actividad</div>
         </section>
 
         <!-- INTERACTIVO-->
@@ -47,8 +151,8 @@
               <div><h1>Nombre de la actividad</h1></div>
               <div class="barra_derecha">
                 <button onclick="Reveal.next();">Recursos</button>
-                <button onclick="Reveal.next();">Libreta</button>
-                <button onclick="Reveal.next();">Continuar</button>
+                <button onclick="Reveal.slide(0,3,undefined);">Libreta</button>
+                <button onclick="Reveal.slide(0,3,undefined);">Continuar</button>
               </div>
             </div>
             <div class="contenido">
@@ -65,9 +169,26 @@
                 </div>
               </div>
               <div class="contenido_b">
-                <div class="interactivo_mock"></div>
+                <div class="interactivo_mock">Interfaz de la actividad</div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="barra">
+            <div class="barra_izquierda">
+              <button onclick="Reveal.slide(0,0,undefined);">Regresar</button>
+            </div>
+            <div><h1>Acerca</h1></div>
+            <div class="barra_derecha">
+            </div>
+          </div>
+          <div class="informacion">
+            <h1>Información</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit justo non dignissim lobortis. Donec nisl lacus, fringilla id neque eget, molestie aliquam quam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit justo non dignissim lobortis. Donec nisl lacus, fringilla id neque eget, molestie aliquam quam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit justo non dignissim lobortis. Donec nisl lacus, fringilla id neque eget, molestie aliquam quam.</p>
           </div>
         </section>
 
@@ -102,6 +223,10 @@
       controls: false,
       touch: false,
       disableLayout: true
+    });
+
+    Reveal.on('slidechanged', event => {
+      console.log(Reveal.getIndices());
     });
   </script>
 </html>

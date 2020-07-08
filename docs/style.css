@@ -1,6 +1,6 @@
 :root {
   /* INTERFACES */
-  --interfaz: #168992;
+  --interfaz: lightgrey;
 
   /* BOTONES */
   --boton: #168992;
@@ -82,10 +82,9 @@ section {
 .barra {
   box-sizing: border-box;
   padding: 0px 1em;
-  margin: 0px;
+  margin: 10px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px blue;
 }
 
 .barra h1 {
@@ -95,12 +94,13 @@ section {
 
 .contenido {
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
   padding: 1.3em;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   grid-gap: 3em;
   border: solid 1px green;
+  max-width: 1280px;
 }
 
 .contenido h1 {
@@ -115,8 +115,81 @@ section {
   max-width: 400px;
 }
 
+.galeria {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1280px;
+  padding: 1.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid 1px green;
+}
+
+.detalle_obra {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1.3em;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-gap: 1em;
+  border: solid 1px green;
+  max-width: 1280px;
+}
+
+.catalogo {
+  box-sizing: border-box;
+  padding: 1.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 480px;
+  overflow: scroll;
+}
+
+.filtro {
+  margin: 15px 0;
+}
+
+
 .interactivo_mock {
   width: 800px;
   height: 600px;
+  background: var(--interfaz);
+}
+
+.video_mock {
+  width: 1280px;
+  height: 720px;
+  background: var(--interfaz);
+  margin: auto;
+}
+
+.obra_mock {
+  margin: 10px;
+  width: 270px;
+  height: 180px;
+  background: var(--interfaz);
+  cursor: pointer;
+}
+
+.obra_ampliada_mock {
+  width: 800px;
+  height: 600px;
+  background: var(--interfaz);
+}
+
+.libreta_mock {
+  margin: 5px;
+  width: 90px;
+  height: 140px;
+  background: var(--interfaz);
+  cursor: pointer;
+}
+
+.libreta_detalle_mock {
+  margin: auto;
+  width: 800px;
+  height: 550px;
   background: var(--interfaz);
 }
