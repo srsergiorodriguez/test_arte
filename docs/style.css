@@ -71,7 +71,7 @@ button:focus {
 section {
   box-sizing: border-box;
   border: solid 1px var(--botonb);
-  /* height: 100%; */
+  height: 100%;
 }
 
 .interactivo {
