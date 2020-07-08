@@ -29,7 +29,7 @@ input {
 
 button {
   font-family: 'Chewy', cursive;
-  font-size: 0.9em;
+  font-size: 1em;
   color:var(--botona);
   background: var(--boton);
   box-shadow:none;
